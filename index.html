@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aromix Parfume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fffafa;
+            color: #333;
+        }
+        header, footer {
+            background-color: #ffe6eb;
+            text-align: center;
+            padding: 1.5rem 1rem;
+        }
+        h1 {
+            margin: 0;
+            color: #b76e79;
+        }
+        h2 {
+            color: #b76e79;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .btn {
+            display: inline-block;
+            margin: 1rem 0;
+            padding: 0.75rem 1.5rem;
+            background-color: #ffccd9;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #f7b9c8;
+        }
+        @media (min-width: 600px) {
+            .gallery img {
+                flex: 1 0 calc(33% - 1rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aromix Parfume</h1>
+        <p>Ароматы. Косметика. Подарки.</p>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Мы подбираем ароматы и оформляем подарки с любовью. Быстрая доставка по городу.</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Галерея</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/300" alt="Placeholder image 1">
+                <img src="https://via.placeholder.com/300" alt="Placeholder image 2">
+                <img src="https://via.placeholder.com/300" alt="Placeholder image 3">
+                <img src="https://via.placeholder.com/300" alt="Placeholder image 4">
+            </div>
+        </section>
+
+        <section id="contact">
+            <a class="btn" href="https://t.me/твоя_ссылка">Написать в Telegram</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Адрес: г. Ваш город, ул. Примерная, 1</p>
+        <p>Время работы: ежедневно с 10:00 до 20:00</p>
+    </footer>
+</body>
+</html>
